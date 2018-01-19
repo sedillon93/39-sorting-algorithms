@@ -47,6 +47,7 @@ In computer science, a priority queue is an abstract data type which is like a r
     * The enqueue method returns (and removes) the value associated with the smaller priority inside the priority queue.
 
 #### Usage example
+![priority queue](https://raw.githubusercontent.com/codefellows-seattle-javascript-401d19/34-priority-queue-and-2d-arrays/master/dequeue.png)
 #### Stretch Goals
 * Add the `peek` and `isEmpty` member functions.
   * The `peek` function returns the root of the internal heap without removing it. 
