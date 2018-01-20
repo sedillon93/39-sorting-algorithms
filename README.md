@@ -20,16 +20,11 @@
 ### Configuration  
 Your lab directory must include  
 * **README.md** -- with a documention about your lab
-* **.babelrc** -- with all dependencies and dev-dependencies 
 * **.eslintrc.json** -- with the class .eslintrc.json file
 * **.gitignore** -- with a robust gitignore
 * **.eslintignore** -- with the class .eslintignore
 * **package.json** -- with all dependencies and dev-dependencies 
-* **webpack.config.js** -- with webpack config
 * **src/** -- containing the front end code
-* **src/main.js** -- containing the entire app
-* **src/style** -- containing your sass
-* **src/style/main.scss** -- for importing and including reset and base
 
 ## Feature Tasks 
 ### Priority Queue
