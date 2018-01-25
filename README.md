@@ -13,7 +13,6 @@
 ## Configuration  
 Your lab directory must include  
 * **README.md** -- with a documention about your lab
-* **.babelrc** -- with all dependencies and dev-dependencies 
 * **.eslintrc.json** -- with the class .eslintrc.json file
 * **.gitignore** -- with a robust gitignore
 * **.eslintignore** -- with the class .eslintignore
