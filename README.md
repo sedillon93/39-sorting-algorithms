@@ -27,7 +27,7 @@ __This is a fairly common interview question__
 
 The Quick Sort implementation covered in class was not stable. Research and implement a stable version of the algorithm. 
 
-## 2 - Mutate MergeSort's input array
+## 2 - Mutate Merge Sort's input array
 
 The Merge Sort implementation covered in class didn't mutate the input array (it creates an output array). Implement a version of Merge Sort that mutates the input array.
 
@@ -46,7 +46,7 @@ Research and implement [Heap Sort](https://en.wikipedia.org/wiki/Heapsort).
 
 ## 5 - Implement a Quick Sort/Insertion Sort Hybrid
 
-Modify the quick sort implementation to use insertion sort if the length of the sorting set is less than 10 elements. 
+Modify the Quick Sort implementation to use Insertion Sort if the length of the sorting set is less than 10 elements. 
 
 ## 6 - Implement Quick Sort with 3-way partition 
 
