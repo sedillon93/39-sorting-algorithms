@@ -62,7 +62,7 @@ Research and implement a version of Quick Sort that divides the array into three
 ## Testing
 - Write a test function that generates an array of N random integers
 - Write a test function that asserts an array is sorted (based on your sorting implementation)
-- Test each sort against an empty array, single-element array, small array, medium array and 10,000 item array.
+- Test each sort against an empty array, single-element array, small array, medium array and a lange array (1,000 - 10,000 items).
 
 ## Stretch Goals
 Implement the remaining feature tasks
