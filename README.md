@@ -59,6 +59,11 @@ Research and implement a version of Quick Sort that divides the array into three
 * Elements equal to the pivot
 * Elements greater than the pivot
 
+## Testing
+- Write a test function that generates an array of N random integers
+- Write a test function that asserts an array is sorted (based on your sorting implementation)
+- Test each sort against an empty array, single-element array, small array, medium array and 10,000 item array.
+
 ## Stretch Goals
 Implement the remaining feature tasks
 
