@@ -21,16 +21,19 @@ const _partition = (collection, leftIndex, rightIndex) => {
 
   for(let i = leftIndex; i < rightIndex; i++){
     if(collection[i] < collection[pivotIndex]){ //if the item at 'i' is less than the item in the pivot index we want to move the element at 'i' below the element at indexOfFirstHigher (i.e. elements that are greater than the element at pivotIndex)
-      _swap_values(collection, i, indexOfFirstHigher);
+      _bubbleDown(collection, i, indexOfFirstHigher);
       indexOfFirstHigher++;
     }
   }
-  // bubble down the pivot value to indexOfFirstHigher
-  let numberOfBubbles = pivotIndex - indexOfFirstHigher;
-  for(let i = 0; i < numberOfBubbles; i++){
-    _swap_values(collection, pivotIndex - i, pivotIndex - (i + 1));
-  }
+  _bubbleDown(collection, pivotIndex, indexOfFirstHigher);
   return indexOfFirstHigher;
+};
+
+const _bubbleDown = (collection, startIndex, endIndex) => {
+  if(startIndex > endIndex){
+    _swap_values(collection, startIndex, startIndex - 1);
+    _bubbleDown(collection, startIndex - 1, endIndex);
+  }
 };
 
 const _swap_values = (collection, index1, index2) => {
