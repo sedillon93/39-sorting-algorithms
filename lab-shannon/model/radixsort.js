@@ -10,6 +10,10 @@ const radixSort = (collection) => {
   let divisor = 1;
   let maxDigits = Math.max(...collection).toString().length;
 
+  if(collection.length < 2){
+    return collection;
+  }
+
   for(let i = 0; i < maxDigits; i++, mod *= 10, divisor *= 10){
     for(let j = 0; j < collection.length; j++){
       let digit = Math.floor((collection[i] % (mod)) / divisor);  // get the next LSD of the element
