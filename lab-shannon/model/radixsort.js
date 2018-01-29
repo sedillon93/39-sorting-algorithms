@@ -6,11 +6,25 @@
 
 const radixSort = (collection) => {
   let buckets = [[],[],[],[],[],[],[],[],[],[]];
+  let mod = 10;
+  let divisor = 1;
+  let maxDigits = Math.max(...collection).toString().length;
 
-  for(let i = 0; i < collection.length; i++){
-    let lastDigit = collection[i] % 10;  // get the last digit of the element
-    buckets[lastDigit].push(collection[i]);  // put the number in the bucket corresponding to its last digit
+  for(let i = 0; i < maxDigits; i++, mod *= 10, divisor *= 10){
+    for(let j = 0; j < collection.length; j++){
+      let digit = Math.floor((collection[i] % (mod)) / divisor);  // get the next LSD of the element
+      buckets[digit].push(collection[j]);  // put the number in the bucket corresponding to its LSD
+    }
+    // dequeue all of the elements from smallest to greatest
+    let position = 0;
+    for(let k = 0; k < buckets.length; k++){
+      while(buckets[k].length > 0){
+        collection[position] = (buckets[k].shift());
+        position++;
+      }
+    }
   }
+  return collection;
 };
 
 module.exports = radixSort;

@@ -1,4 +1,4 @@
-// choose a pivot: 'Choose either a random index for the pivot, the middle index of the partition, or (especially for longer partitions) the median of the first, middle and last element of the partition for the pivot'
+// choosing a pivot: 'Choose either a random index for the pivot, the middle index of the partition, or (especially for longer partitions) the median of the first, middle and last element of the partition for the pivot'
 // let pivotIndex = Math.floor((leftIndex + rightIndex) / 2);
 
 const stableQuicksort = (collection) => {
