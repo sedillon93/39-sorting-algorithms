@@ -25,7 +25,7 @@ const _partition = (collection, leftIndex, rightIndex) => {
       indexOfFirstHigher++;
     }
   }
-  // bubble down the pivot value
+  // bubble down the pivot value to indexOfFirstHigher
   let numberOfBubbles = pivotIndex - indexOfFirstHigher;
   for(let i = 0; i < numberOfBubbles; i++){
     _swap_values(collection, pivotIndex - i, pivotIndex - (i + 1));
