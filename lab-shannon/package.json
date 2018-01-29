@@ -1,0 +1,14 @@
+{
+  "name": "lab-shannon",
+  "version": "1.0.0",
+  "description": "efficient sorting algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest -i --coverage"
+  },
+  "author": "shannon",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^22.1.4"
+  }
+}
